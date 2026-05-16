@@ -1,0 +1,166 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Get a free hosted Postgres database in seconds: `npx create-db`
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+}
+
+enum PropertyStatus {
+  DRAFT
+  AVAILABLE
+  RESERVED
+  CLOSED
+}
+
+enum TransactionType {
+  RENT
+  SALE
+}
+
+enum Currency {
+  EUR
+  RON
+}
+
+enum PropertyType {
+  APARTMENT
+  HOUSE
+  LAND
+  COMMERCIAL
+  OFFICE
+}
+
+enum ApartmentType {
+  STUDIO
+  PENTHOUSE
+  DUPLEX
+  APARTMENT
+  TRIPLEX
+}
+
+enum HouseType {
+  INDIVIDUAL
+  VILLA
+  TOWNHOUSE
+  DUPLEX
+  TRIPLEX
+  SEMI_DETACHED
+}
+
+enum BuildingStructure {
+  CONCRETE
+  BRICK
+  BCA
+  WOOD
+  METAL
+  OTHER
+  FRAME
+  SLAB
+  MONOLITH
+}
+
+enum ConstructionStatus {
+  COMPLETED
+  FINISHED
+  SEMI_FINISHED
+  IN_CONSTRUCTION
+  RED
+  NEEDS_RENOVATION
+  DEMOLITION
+  STRUCTURE
+  PROJECT
+}
+
+enum InteriorState {
+  ULTRA_FINISHED
+  MODERN_FINISHED
+  SEMI_FINISHED
+  CLASSIC_FINISHED
+  GOOD
+  NEW
+  RENOVATED
+  NEEDS_RENOVATION
+}
+
+enum EnergyClass {
+  A
+  B
+  C
+  D
+  E
+  F
+  G
+}
+
+model Property {
+  id                String             @id @default(cuid())
+  title             String
+  description       String
+  descriptionRo     String?
+  status            PropertyStatus     @default(DRAFT)
+  transactionType   TransactionType
+  propertyType      PropertyType
+  price             Float
+  currency          Currency           @default(EUR)
+  area              Float
+  rooms             Int?
+  bedrooms          Int?
+  bathrooms         Int?
+  floor             Int?
+  buildingFloors    Int?
+  yearBuilt         Int?
+  
+  // Location
+  city              String
+  street            String?
+  streetNumber      String?
+  building          String?
+  apartment         String?
+  lat               Float?
+  lng               Float?
+  
+  // Contact
+  brokerName        String
+  brokerEmail       String
+  brokerPhone       String
+  
+  // Detailed fields
+  apartmentType     ApartmentType?
+  houseType         HouseType?
+  buildingStructure BuildingStructure?
+  constructionStatus ConstructionStatus?
+  interiorState     InteriorState?
+  energyClass       EnergyClass?
+  
+  balconies         Int?
+  garages           Int?
+  kitchens          Int?
+  
+  hasBasement       Boolean            @default(false)
+  hasAttic          Boolean            @default(false)
+  hasElevator       Boolean            @default(false)
+  hasParking        Boolean            @default(false)
+  
+  negotiablePrice   Boolean            @default(false)
+  maintenanceCost   Float?
+  guaranteeCost     Float?
+  
+  // Images
+  images            String[]
+  
+  // Timestamps
+  createdAt         DateTime           @default(now())
+  updatedAt         DateTime           @updatedAt
+  
+  @@index([status])
+  @@index([transactionType])
+  @@index([propertyType])
+  @@index([city])
+  @@index([price])
+}

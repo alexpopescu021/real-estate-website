@@ -1,0 +1,116 @@
+{
+  "common": {
+    "search": "Caută",
+    "filter": "Filtrează",
+    "save": "Salvează",
+    "cancel": "Anulează",
+    "delete": "Șterge",
+    "edit": "Editează",
+    "create": "Creează",
+    "back": "Înapoi",
+    "loading": "Se încarcă...",
+    "error": "Eroare",
+    "success": "Succes"
+  },
+  "nav": {
+    "home": "Acasă",
+    "listings": "Anunțuri",
+    "search": "Caută",
+    "admin": "Admin"
+  },
+  "property": {
+    "title": "Proprietate",
+    "price": "Preț",
+    "area": "Suprafață",
+    "rooms": "Camere",
+    "bedrooms": "Dormitoare",
+    "bathrooms": "Băi",
+    "floor": "Etaj",
+    "yearBuilt": "An Construcție",
+    "description": "Descriere",
+    "location": "Locație",
+    "contact": "Contact",
+    "broker": "Agent",
+    "status": "Stare",
+    "type": "Tip",
+    "forRent": "De Închiriat",
+    "forSale": "De Vânzare",
+    "viewDetails": "Vezi Detalii",
+    "contactBroker": "Contactează Agentul"
+  },
+  "status": {
+    "draft": "Schiță",
+    "available": "Disponibil",
+    "reserved": "Rezervat",
+    "closed": "Închis"
+  },
+  "transactionType": {
+    "rent": "Închiriere",
+    "sale": "Vânzare"
+  },
+  "propertyType": {
+    "apartment": "Apartament",
+    "house": "Casă",
+    "land": "Teren",
+    "commercial": "Comercial",
+    "office": "Birouri"
+  },
+  "currency": {
+    "EUR": "€",
+    "RON": "RON"
+  },
+  "admin": {
+    "login": "Autentificare Admin",
+    "username": "Utilizator",
+    "password": "Parolă",
+    "loginButton": "Autentificare",
+    "dashboard": "Panou de Control",
+    "listings": "Anunțuri",
+    "createListing": "Creează Anunț",
+    "editListing": "Editează Anunț",
+    "deleteListing": "Șterge Anunț",
+    "logout": "Deconectare"
+  },
+  "form": {
+    "title": "Titlu",
+    "description": "Descriere",
+    "descriptionRo": "Descriere (Română)",
+    "price": "Preț",
+    "currency": "Monedă",
+    "area": "Suprafață (m²)",
+    "rooms": "Camere",
+    "bedrooms": "Dormitoare",
+    "bathrooms": "Băi",
+    "floor": "Etaj",
+    "buildingFloors": "Etaje Clădire",
+    "yearBuilt": "An Construcție",
+    "city": "Oraș",
+    "street": "Stradă",
+    "streetNumber": "Număr Stradă",
+    "building": "Bloc",
+    "apartment": "Apartament",
+    "brokerName": "Nume Agent",
+    "brokerEmail": "Email Agent",
+    "brokerPhone": "Telefon Agent",
+    "transactionType": "Tip Tranzacție",
+    "propertyType": "Tip Proprietate",
+    "status": "Stare",
+    "images": "Imagini",
+    "uploadImages": "Încarcă Imagini"
+  },
+  "search": {
+    "title": "Caută Proprietăți",
+    "searchPlaceholder": "Caută după locație...",
+    "filters": "Filtre",
+    "priceRange": "Interval Preț",
+    "minPrice": "Preț Minim",
+    "maxPrice": "Preț Maxim",
+    "propertyType": "Tip Proprietate",
+    "transactionType": "Tip Tranzacție",
+    "rooms": "Camere",
+    "applyFilters": "Aplică Filtre",
+    "resetFilters": "Resetează Filtre",
+    "noResults": "Nu s-au găsit proprietăți",
+    "results": "rezultate"
+  }
+}

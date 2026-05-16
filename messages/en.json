@@ -1,0 +1,116 @@
+{
+  "common": {
+    "search": "Search",
+    "filter": "Filter",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "create": "Create",
+    "back": "Back",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success"
+  },
+  "nav": {
+    "home": "Home",
+    "listings": "Listings",
+    "search": "Search",
+    "admin": "Admin"
+  },
+  "property": {
+    "title": "Property",
+    "price": "Price",
+    "area": "Area",
+    "rooms": "Rooms",
+    "bedrooms": "Bedrooms",
+    "bathrooms": "Bathrooms",
+    "floor": "Floor",
+    "yearBuilt": "Year Built",
+    "description": "Description",
+    "location": "Location",
+    "contact": "Contact",
+    "broker": "Broker",
+    "status": "Status",
+    "type": "Type",
+    "forRent": "For Rent",
+    "forSale": "For Sale",
+    "viewDetails": "View Details",
+    "contactBroker": "Contact Broker"
+  },
+  "status": {
+    "draft": "Draft",
+    "available": "Available",
+    "reserved": "Reserved",
+    "closed": "Closed"
+  },
+  "transactionType": {
+    "rent": "Rent",
+    "sale": "Sale"
+  },
+  "propertyType": {
+    "apartment": "Apartment",
+    "house": "House",
+    "land": "Land",
+    "commercial": "Commercial",
+    "office": "Office"
+  },
+  "currency": {
+    "EUR": "€",
+    "RON": "RON"
+  },
+  "admin": {
+    "login": "Admin Login",
+    "username": "Username",
+    "password": "Password",
+    "loginButton": "Login",
+    "dashboard": "Dashboard",
+    "listings": "Listings",
+    "createListing": "Create Listing",
+    "editListing": "Edit Listing",
+    "deleteListing": "Delete Listing",
+    "logout": "Logout"
+  },
+  "form": {
+    "title": "Title",
+    "description": "Description",
+    "descriptionRo": "Description (Romanian)",
+    "price": "Price",
+    "currency": "Currency",
+    "area": "Area (m²)",
+    "rooms": "Rooms",
+    "bedrooms": "Bedrooms",
+    "bathrooms": "Bathrooms",
+    "floor": "Floor",
+    "buildingFloors": "Building Floors",
+    "yearBuilt": "Year Built",
+    "city": "City",
+    "street": "Street",
+    "streetNumber": "Street Number",
+    "building": "Building",
+    "apartment": "Apartment",
+    "brokerName": "Broker Name",
+    "brokerEmail": "Broker Email",
+    "brokerPhone": "Broker Phone",
+    "transactionType": "Transaction Type",
+    "propertyType": "Property Type",
+    "status": "Status",
+    "images": "Images",
+    "uploadImages": "Upload Images"
+  },
+  "search": {
+    "title": "Search Properties",
+    "searchPlaceholder": "Search by location...",
+    "filters": "Filters",
+    "priceRange": "Price Range",
+    "minPrice": "Min Price",
+    "maxPrice": "Max Price",
+    "propertyType": "Property Type",
+    "transactionType": "Transaction Type",
+    "rooms": "Rooms",
+    "applyFilters": "Apply Filters",
+    "resetFilters": "Reset Filters",
+    "noResults": "No properties found",
+    "results": "results"
+  }
+}
